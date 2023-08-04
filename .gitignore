@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 bootstrap.css.map
+ignore.prettierignore
