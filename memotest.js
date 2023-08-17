@@ -6,6 +6,8 @@ const $squares = document.querySelectorAll(".square");
 function selectRandomSquares() {
   let squaresIndex = [];
   let i = 0;
+  let randomSquares = [];
+
   $squares.forEach(function ($square) {
     squaresIndex.push(i);
     i++;
