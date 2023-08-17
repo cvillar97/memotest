@@ -25,6 +25,24 @@ function selectRandomSquares() {
 }
 
 function asignRandomColors(squares) {
+  const colors = [
+    "#ffff1c", //yellow
+    "#ff0000", //red
+    "#0000ff", //blue
+    "#008000", //green
+    "#ffa500", //orange
+    "#87ceeb", //skyblue
+  ];
+
+  let colorsIndex = [];
+
+  let j = 0;
+
+  while (j < colors.length) {
+    colorsIndex.push(j);
+    j++;
+  }
+
 }
 
 function generateRandomNumber(max) {
