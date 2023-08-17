@@ -23,6 +23,10 @@ function selectRandomSquares() {
 
   return randomSquares;
 }
+
+function asignRandomColors(squares) {
+}
+
 function generateRandomNumber(max) {
   const randomNumber = Math.floor(Math.random() * max);
 
