@@ -12,6 +12,15 @@ function selectRandomSquares() {
     squaresIndex.push(i);
     i++;
   });
+
+  while (squaresIndex.length > 0) {
+    const randomIndex = generateRandomNumber(squaresIndex.length);
+    const selectedSquare = $squares[squaresIndex[randomIndex]];
+
+    randomSquares.push(selectedSquare);
+    squaresIndex.splice(randomIndex, 1);
+  }
+
   return randomSquares;
 }
 function generateRandomNumber(max) {
