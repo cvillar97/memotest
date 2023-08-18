@@ -3,6 +3,11 @@ const $status = document.querySelector("#status");
 const $startbutton = document.querySelector("#start-button");
 
 const $squares = document.querySelectorAll(".square");
+
+let randomSquares = selectRandomSquares();
+
+asignRandomColors(randomSquares);
+
 function selectRandomSquares() {
   let squaresIndex = [];
   let i = 0;
