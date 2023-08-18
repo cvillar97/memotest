@@ -43,6 +43,26 @@ function asignRandomColors(squares) {
     j++;
   }
 
+  let randomIndex = generateRandomNumber(colorsIndex.length);
+  let selectedColor = colors[colorsIndex[randomIndex]];
+
+  const numberOfSquaresPerColor = 2;
+
+  let i = 0;
+
+  squares.forEach(function (square) {
+    if (i < numberOfSquaresPerColor) {
+      square.style.backgroundColor = selectedColor;
+      i++;
+    } else {
+      colorsIndex.splice(randomIndex, 1);
+      randomIndex = generateRandomNumber(colorsIndex.length);
+      selectedColor = colors[colorsIndex[randomIndex]];
+      i = 0;
+      square.style.backgroundColor = selectedColor;
+      i++;
+    }
+  });
 }
 
 function generateRandomNumber(max) {
