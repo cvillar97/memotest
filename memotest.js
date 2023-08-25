@@ -25,6 +25,12 @@ function blockUserInput(square) {
   });
 }
 
+function hideColors() {
+  let squares = document.querySelectorAll(".square");
+  squares.forEach(function (square) {
+    square.style.backgroundColor = "rgb(47, 79, 79)";
+  });
+}
 
 function selectRandomSquares() {
   let squaresIndex = [];
