@@ -34,6 +34,9 @@ function handleUserInput(e) {
 
   if (selectedSquares.length < numberOfComparableSquares) {
     unlockUserInput();
+  } else if (selectedSquares.length === numberOfComparableSquares) {
+    blockUserInput();
+
 }
 
 function unlockUserInput() {
