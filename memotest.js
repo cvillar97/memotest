@@ -23,6 +23,7 @@ function handleUserInput(e) {
   const $square = e.target;
   const squareId = $square.id;
   selectedSquares.push($square);
+  changeClassName($square, "selected-square");
 }
 
 function unlockUserInput() {
