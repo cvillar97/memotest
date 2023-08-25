@@ -22,6 +22,7 @@ $startbutton.onclick = function () {
 function handleUserInput(e) {
   const $square = e.target;
   const squareId = $square.id;
+  selectedSquares.push($square);
 }
 
 function unlockUserInput() {
