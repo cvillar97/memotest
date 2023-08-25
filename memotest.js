@@ -30,6 +30,8 @@ function handleUserInput(e) {
   changeClassName($square, "selected-square");
   showRealColor($square, squareId);
 
+  const COMPARISON_MS = 500;
+
 }
 
 function unlockUserInput() {
