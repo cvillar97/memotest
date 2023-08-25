@@ -19,6 +19,9 @@ $startbutton.onclick = function () {
   unlockUserInput();
 };
 
+function handleUserInput(e) {
+}
+
 function unlockUserInput() {
   document.querySelectorAll(".square").forEach(function (square) {
     if (!square.classList.contains("selected-square")) {
