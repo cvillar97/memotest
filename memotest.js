@@ -42,6 +42,16 @@ function handleUserInput(e) {
       selectedSquares[0].style.backgroundColor ===
         selectedSquares[1].style.backgroundColor && notTheSameId;
 
+    if (success) {
+      selectedSquares.forEach(function (square) {
+        changeClassName(square, "success-square");
+        setTimeout(function () {
+          square.style.opacity = "0";
+        }, COMPARISON_MS);
+      });
+
+      unlockUserInput();
+      selectedSquares = [];
 function changeClassName(square, newClass) {
   square.className = newClass;
 }
