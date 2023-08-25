@@ -3,6 +3,8 @@ const $status = document.querySelector("#status");
 const $startbutton = document.querySelector("#start-button");
 
 const $squares = document.querySelectorAll(".square");
+const numberOfComparableSquares = 2;
+let selectedSquares = [];
 
 let randomSquares = selectRandomSquares();
 blockUserInput();
