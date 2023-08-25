@@ -25,6 +25,12 @@ function blockUserInput(square) {
   });
 }
 
+function assignTransitionProperty() {
+  $squares.forEach(function (square) {
+    square.style.transition = "background-color 500ms, opacity 500ms";
+  });
+}
+
 function hideColors() {
   let squares = document.querySelectorAll(".square");
   squares.forEach(function (square) {
