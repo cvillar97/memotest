@@ -52,6 +52,14 @@ function assignTransitionProperty() {
   });
 }
 
+function saveAssignedColors() {
+  let squares = document.querySelectorAll(".square");
+  squares.forEach(function (square) {
+    let assignedColor = square.style.backgroundColor;
+    realColors.push(assignedColor);
+  });
+}
+
 function hideColors() {
   let squares = document.querySelectorAll(".square");
   squares.forEach(function (square) {
