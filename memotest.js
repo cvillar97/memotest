@@ -10,6 +10,8 @@ let randomSquares = selectRandomSquares();
 blockUserInput();
 
 asignRandomColors(randomSquares);
+const realColors = [];
+
 function blockUserInput(square) {
   $squares.forEach(function (square) {
     square.onclick = function () {};
