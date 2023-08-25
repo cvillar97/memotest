@@ -52,6 +52,20 @@ function handleUserInput(e) {
 
       unlockUserInput();
       selectedSquares = [];
+    } else {
+      selectedSquares.forEach(function (square) {
+        changeClassName(square, "square");
+        setTimeout(function () {
+          square.style.backgroundColor = "rgb(47, 79, 79)";
+        }, COMPARISON_MS);
+      });
+
+      selectedSquares = [];
+      unlockUserInput();
+    }
+  }
+}
+
 function changeClassName(square, newClass) {
   square.className = newClass;
 }
