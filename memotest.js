@@ -37,6 +37,7 @@ function handleUserInput(e) {
   } else if (selectedSquares.length === numberOfComparableSquares) {
     blockUserInput();
 
+    const notTheSameId = selectedSquares[0].id !== selectedSquares[1].id;
 }
 
 function unlockUserInput() {
