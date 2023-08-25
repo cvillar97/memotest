@@ -6,11 +6,18 @@ const $squares = document.querySelectorAll(".square");
 const numberOfComparableSquares = 2;
 let selectedSquares = [];
 
-let randomSquares = selectRandomSquares();
 blockUserInput();
 
-asignRandomColors(randomSquares);
 const realColors = [];
+
+$startbutton.onclick = function () {
+  const randomSquares = selectRandomSquares();
+  asignRandomColors(randomSquares);
+  saveAssignedColors();
+  hideColors();
+  assignTransitionProperty();
+  unlockUserInput();
+};
 
 function blockUserInput(square) {
   $squares.forEach(function (square) {
