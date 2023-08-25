@@ -32,6 +32,8 @@ function handleUserInput(e) {
 
   const COMPARISON_MS = 500;
 
+  if (selectedSquares.length < numberOfComparableSquares) {
+    unlockUserInput();
 }
 
 function unlockUserInput() {
