@@ -20,6 +20,8 @@ $startbutton.onclick = function () {
 };
 
 function handleUserInput(e) {
+  const $square = e.target;
+  const squareId = $square.id;
 }
 
 function unlockUserInput() {
