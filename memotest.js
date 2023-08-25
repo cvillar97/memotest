@@ -5,8 +5,15 @@ const $startbutton = document.querySelector("#start-button");
 const $squares = document.querySelectorAll(".square");
 
 let randomSquares = selectRandomSquares();
+blockUserInput();
 
 asignRandomColors(randomSquares);
+function blockUserInput(square) {
+  $squares.forEach(function (square) {
+    square.onclick = function () {};
+  });
+}
+
 
 function selectRandomSquares() {
   let squaresIndex = [];
