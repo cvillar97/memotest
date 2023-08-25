@@ -38,6 +38,10 @@ function handleUserInput(e) {
     blockUserInput();
 
     const notTheSameId = selectedSquares[0].id !== selectedSquares[1].id;
+    const success =
+      selectedSquares[0].style.backgroundColor ===
+        selectedSquares[1].style.backgroundColor && notTheSameId;
+
 }
 
 function unlockUserInput() {
