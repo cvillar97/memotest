@@ -16,9 +16,17 @@ body {
   text-align: center;
 }
 
+.success-square {
+  height: 200px;
+}
+
+.selected-square {
+  height: 200px;
+}
+
 .square {
   height: 200px;
-  background-color: darkslategrey;
+  background-color: rgb(47, 79, 79);
 }
 
 .col-sm {

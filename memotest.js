@@ -42,6 +42,8 @@ function handleUserInput(e) {
       selectedSquares[0].style.backgroundColor ===
         selectedSquares[1].style.backgroundColor && notTheSameId;
 
+function changeClassName(square, newClass) {
+  square.className = newClass;
 }
 
 function unlockUserInput() {
