@@ -20,7 +20,7 @@ $startButton.onclick = function () {
   asignRandomColors(randomSquares);
   saveAssignedColors();
   hideColors();
-  assignTransitionProperty();
+  handleTransitionProperty("background-color 500ms, opacity 500ms");
   unlockUserInput();
 };
 
@@ -89,9 +89,11 @@ function blockUserInput(square) {
   });
 }
 
-function assignTransitionProperty() {
-  $squares.forEach(function (square) {
-    square.style.transition = "background-color 500ms, opacity 500ms";
+function handleTransitionProperty(property) {
+  let squares = document.querySelectorAll(".square");
+
+  squares.forEach(function (square) {
+    square.style.transition = property;
   });
 }
 
