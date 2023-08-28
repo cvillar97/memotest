@@ -34,6 +34,10 @@ $restartButton.onclick = function () {
   updateTextContent($remainingCoincidences, "-");
   updateTextContent($status, "Press start to play");
   blockUserInput();
+  $restartButton.disabled = true;
+  changeElementOpacity($restartButton, 0);
+  $startButton.disabled = false;
+  changeElementOpacity($startButton, 1);
 };
 
 function handleUserInput(e) {
