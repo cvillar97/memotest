@@ -89,6 +89,10 @@ function changeElementOpacity(element, opacity) {
   element.style.opacity = opacity;
 }
 
+function updateTextContent(element, text) {
+  element.textContent = text;
+}
+
 function changeClassName(square, newClass) {
   square.className = newClass;
 }
