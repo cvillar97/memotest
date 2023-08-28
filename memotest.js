@@ -24,6 +24,8 @@ $startButton.onclick = function () {
   unlockUserInput();
   $startButton.disabled = true;
   showOrHideElement($startButton, 0);
+  $restartButton.disabled = false;
+  showOrHideElement($restartButton, 1);
 };
 
 function showRealColor(square, id) {
