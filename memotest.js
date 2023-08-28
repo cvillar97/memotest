@@ -6,6 +6,7 @@ const $restartButton = document.querySelector("#restart-button");
 const $squares = document.querySelectorAll(".square");
 const numberOfComparableSquares = 2;
 let selectedSquares = [];
+let remainingCoincidences = $squares.length / numberOfComparableSquares;
 
 blockUserInput();
 
