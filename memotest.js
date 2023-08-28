@@ -60,7 +60,14 @@ function handleUserInput(e) {
       updateTextContent($remainingCoincidences, remainingCoincidences);
       unlockUserInput();
       selectedSquares = [];
-    } else {
+      const allCoincidencesFound = remainingCoincidences === 0;
+      if (allCoincidencesFound) {
+        updateTextContent(
+          $status,
+          "Congratulations!! You found all the coincidences!!"
+        );
+      }
+    } else if (!success) {
       selectedSquares.forEach(function (square) {
         changeClassName(square, "square");
         setTimeout(function () {
