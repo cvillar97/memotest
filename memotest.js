@@ -14,6 +14,8 @@ let realColors = [];
 
 $startButton.onclick = function () {
   remainingCoincidences = $squares.length / numberOfComparableSquares;
+  updateTextContent($remainingCoincidences, remainingCoincidences);
+  updateTextContent($status, "");
   const randomSquares = selectRandomSquares();
   asignRandomColors(randomSquares);
   saveAssignedColors();
