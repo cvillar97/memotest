@@ -12,7 +12,8 @@ blockUserInput();
 
 let realColors = [];
 
-$startbutton.onclick = function () {
+$startButton.onclick = function () {
+  remainingCoincidences = $squares.length / numberOfComparableSquares;
   const randomSquares = selectRandomSquares();
   asignRandomColors(randomSquares);
   saveAssignedColors();
