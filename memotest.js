@@ -1,6 +1,7 @@
 const $remainingCoincidences = document.querySelector("#coincidences");
 const $status = document.querySelector("#status");
-const $startbutton = document.querySelector("#start-button");
+const $startButton = document.querySelector("#start-button");
+const $restartButton = document.querySelector("#restart-button");
 
 const $squares = document.querySelectorAll(".square");
 const numberOfComparableSquares = 2;
