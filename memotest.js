@@ -22,6 +22,8 @@ $startButton.onclick = function () {
   hideColors();
   handleTransitionProperty("background-color 500ms, opacity 500ms");
   unlockUserInput();
+  $startButton.disabled = true;
+  showOrHideElement($startButton, 0);
 };
 
 function showRealColor(square, id) {
