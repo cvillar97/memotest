@@ -28,6 +28,13 @@ $startButton.onclick = function () {
   changeElementOpacity($restartButton, 1);
 };
 
+$restartButton.onclick = function () {
+  selectedSquares = [];
+  realColors = [];
+  updateTextContent($remainingCoincidences, "-");
+  updateTextContent($status, "Press start to play");
+  blockUserInput();
+};
 
 function handleUserInput(e) {
   const $square = e.target;
