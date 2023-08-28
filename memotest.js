@@ -23,9 +23,9 @@ $startButton.onclick = function () {
   handleTransitionProperty("background-color 500ms, opacity 500ms");
   unlockUserInput();
   $startButton.disabled = true;
-  showOrHideElement($startButton, 0);
+  changeElementOpacity($startButton, 0);
   $restartButton.disabled = false;
-  showOrHideElement($restartButton, 1);
+  changeElementOpacity($restartButton, 1);
 };
 
 
@@ -83,6 +83,10 @@ function handleUserInput(e) {
 
 function showRealColor(square, id) {
   square.style.backgroundColor = realColors[id];
+}
+
+function changeElementOpacity(element, opacity) {
+  element.style.opacity = opacity;
 }
 
 function changeClassName(square, newClass) {
