@@ -56,6 +56,8 @@ function handleUserInput(e) {
         }, COMPARISON_MS);
       });
 
+      remainingCoincidences--;
+      updateTextContent($remainingCoincidences, remainingCoincidences);
       unlockUserInput();
       selectedSquares = [];
     } else {
