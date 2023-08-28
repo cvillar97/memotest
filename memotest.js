@@ -10,7 +10,7 @@ let remainingCoincidences = $squares.length / numberOfComparableSquares;
 
 blockUserInput();
 
-const realColors = [];
+let realColors = [];
 
 $startbutton.onclick = function () {
   const randomSquares = selectRandomSquares();
