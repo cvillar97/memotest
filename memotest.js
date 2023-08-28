@@ -97,8 +97,9 @@ function unlockUserInput() {
   });
 }
 
-function blockUserInput(square) {
-  $squares.forEach(function (square) {
+function blockUserInput() {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach(function (square) {
     square.onclick = function () {};
   });
 }
