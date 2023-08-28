@@ -33,6 +33,7 @@ $restartButton.onclick = function () {
   realColors = [];
   updateTextContent($remainingCoincidences, "-");
   updateTextContent($status, "Press start to play");
+  restoreInitialSquares();
   blockUserInput();
   $restartButton.disabled = true;
   changeElementOpacity($restartButton, 0);
@@ -90,6 +91,23 @@ function handleUserInput(e) {
       unlockUserInput();
     }
   }
+}
+
+function restoreInitialSquares() {
+  const squares = document.querySelectorAll(
+    "div.selected-square, div.success-square"
+  );
+
+  squares.forEach(function (square) {
+    changeClassName(square, "square");
+  });
+
+  handleTransitionProperty("");
+  squares.forEach(function (square) {
+    changeElementOpacity(square, 1);
+  });
+
+  hideColors();
 }
 
 function showRealColor(square, id) {
