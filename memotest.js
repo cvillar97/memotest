@@ -28,9 +28,6 @@ $startButton.onclick = function () {
   showOrHideElement($restartButton, 1);
 };
 
-function showRealColor(square, id) {
-  square.style.backgroundColor = realColors[id];
-}
 
 function handleUserInput(e) {
   const $square = e.target;
@@ -73,6 +70,10 @@ function handleUserInput(e) {
       unlockUserInput();
     }
   }
+}
+
+function showRealColor(square, id) {
+  square.style.backgroundColor = realColors[id];
 }
 
 function changeClassName(square, newClass) {
