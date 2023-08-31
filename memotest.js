@@ -43,6 +43,9 @@ $restartButton.onclick = function () {
 
 function handleUserInput(e) {
   const $square = e.target;
+  if ($square.className === "selected-square") {
+    return;
+  }
   const squareId = $square.id;
   selectedSquares.push($square);
   changeClassName($square, "selected-square");
