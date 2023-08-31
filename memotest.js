@@ -128,9 +128,7 @@ function changeClassName(square, newClass) {
 
 function unlockUserInput() {
   document.querySelectorAll(".square").forEach(function (square) {
-    if (!square.classList.contains("selected-square")) {
-      square.onclick = handleUserInput;
-    }
+    square.onclick = handleUserInput;
   });
 }
 
