@@ -151,15 +151,15 @@ function handleTransitionProperty(property) {
 }
 
 function saveAssignedColors() {
-  let squares = document.querySelectorAll(".square");
+  const squares = document.querySelectorAll(".square");
   squares.forEach(function (square) {
-    let assignedColor = square.style.backgroundColor;
+    const assignedColor = square.style.backgroundColor;
     realColors.push(assignedColor);
   });
 }
 
 function hideColors() {
-  let squares = document.querySelectorAll(".square");
+  const squares = document.querySelectorAll(".square");
   squares.forEach(function (square) {
     square.style.backgroundColor = "rgb(47, 79, 79)";
   });
