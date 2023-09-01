@@ -44,7 +44,7 @@ $restartButton.onclick = function () {
 
 function handleUserInput(e) {
   const $square = e.target;
-  if ($square.className === "selected-square") {
+  if ($square.className !== "square") {
     return;
   }
   const squareId = $square.id;
