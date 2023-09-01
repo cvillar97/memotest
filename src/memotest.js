@@ -2,6 +2,7 @@ const $remainingCoincidences = document.querySelector("#coincidences");
 const $status = document.querySelector("#status");
 const $startButton = document.querySelector("#start-button");
 const $restartButton = document.querySelector("#restart-button");
+const $colorsTable = document.querySelector("#colors-table");
 
 const $squares = document.querySelectorAll(".square");
 const numberOfComparableSquares = 2;
@@ -130,9 +131,7 @@ function changeClassName(square, newClass) {
 }
 
 function unlockUserInput() {
-  document.querySelectorAll(".square").forEach(function (square) {
-    square.onclick = handleUserInput;
-  });
+  $colorsTable.onclick = handleUserInput;
 }
 
 function blockUserInput() {
