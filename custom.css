@@ -16,9 +16,26 @@ body {
   text-align: center;
 }
 
+#start-button {
+  transition: opacity 600ms;
+}
+
+#restart-button {
+  transition: opacity 600ms;
+  opacity: 0;
+}
+
+.success-square {
+  height: 200px;
+}
+
+.selected-square {
+  height: 200px;
+}
+
 .square {
   height: 200px;
-  background-color: darkslategrey;
+  background-color: rgb(47, 79, 79);
 }
 
 .col-sm {

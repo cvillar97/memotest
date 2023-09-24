@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memotest</title>
-    <link rel="stylesheet" href="bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
@@ -16,11 +19,21 @@
             <label id="coincidences">-</label>
           </div>
           <div class="col-md-4">
-            <label id="status">Good!-Very good!-Press start to play</label>
+            <label id="status">Press start to play</label>
           </div>
-          <div class="d-grid gap-2 col-4 mx-auto">
+          <div class="d-grid gap-2 col-2 mx-auto">
             <button class="btn btn-primary" type="button" id="start-button">
               Start
+            </button>
+          </div>
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <button
+              class="btn btn-success"
+              disabled
+              type="button"
+              id="restart-button"
+            >
+              Restart memotest
             </button>
           </div>
         </div>
@@ -28,47 +41,49 @@
       <div class="container" id="colors-table">
         <div class="row" id="row">
           <div class="col-sm">
-            <div class="square" id="square-1"></div>
+            <div class="square" id="0"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-2"></div>
+            <div class="square" id="1"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-3"></div>
+            <div class="square" id="2"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-4"></div>
+            <div class="square" id="3"></div>
           </div>
         </div>
         <div class="row" id="row">
           <div class="col-sm">
-            <div class="square" id="square-5"></div>
+            <div class="square" id="4"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-6"></div>
+            <div class="square" id="5"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-7"></div>
+            <div class="square" id="6"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-8"></div>
+            <div class="square" id="7"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm">
-            <div class="square" id="square-9"></div>
+            <div class="square" id="8"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-10"></div>
+            <div class="square" id="9"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-11"></div>
+            <div class="square" id="10"></div>
           </div>
           <div class="col-sm">
-            <div class="square" id="square-12"></div>
+            <div class="square" id="11"></div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./src/memotest.js"></script>
   </body>
 </html>
