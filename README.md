@@ -1,6 +1,6 @@
 # memotest
 
-Memory game for r/Argentina-programa
+Memory game for r/Argentina-programa's JS course
 
 ## Installation
 
